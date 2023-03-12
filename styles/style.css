@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto+Mono&display=swap');
+
+:root {
+    --cor-primaria: #000;
+    --cor-secundaria: #E9E8E8;
+    --cor-terciaria: #913175;
+    --cor-hover: #af37dfbe;
+
+    --fonte-primaria: 'Montserrat', sans-serif;
+    --fonte-secundaria: 'Roboto Mono', monospace;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /*height: 100vh;*/
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: #ffffff;
+}
+
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 80px;
+}
+.cabecalho-menu-link {
+    font-family: var(--fonte-primaria);
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+.destaque-titulo {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao-conteudo{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao-conteudo-titulo {
+    font-size: 36px;
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao-conteudo-paragrafo {
+    font-size: 24px;
+    font-family: var(--fonte-primaria);
+}
+
+.apresentacao-links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao-links-subtitulo{
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.apresentacao-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 378px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 100px;
+    padding: 21.5px 0;
+    font-family: var(--fonte-primaria);
+    font-weight: 600;
+    font-size: 24px;
+    /*box-shadow: 10px 20px grey;*/
+}
+
+/*hover -> serve para fazer animações quando o mouse passa pelo que pretende-se animar (ex: botões)*/
+
+.apresentacao-buttons:hover {
+    background-color: var(--cor-hover);
+    /*padding: 3%;* -> o padding do botao aumenta quando o cursor passa/
+    /*transition: 500ms linear; -> animacao nos botoes*/ 
+}
+
+.apresentacao-conteudo-titulo:hover{
+    color: pink;
+    transition: 100ms linear;
+}
+
+.rodape {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    padding: 23.64px;
+    text-align: center;
+    font-family: var(--fonte-primaria);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.apresentacao-conteudo-lista {
+    font-family: var(--fonte-primaria);
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--cor-secundaria);
+}
+
+.destaque-certificado {
+    text-decoration: none;
+    color: var(--cor-terciaria);
+}
