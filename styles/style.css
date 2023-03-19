@@ -2,9 +2,9 @@
 
 :root {
     --cor-primaria: #000;
-    --cor-secundaria: #E9E8E8;
-    --cor-terciaria: #913175;
-    --cor-hover: #af37dfbe;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #2e2b2b;
 
     --fonte-primaria: 'Montserrat', sans-serif;
     --fonte-secundaria: 'Roboto Mono', monospace;
@@ -33,7 +33,7 @@ body{
 .cabecalho-menu-link {
     font-family: var(--fonte-primaria);
     font-weight: 600;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: var(--cor-terciaria);
     text-decoration: none;
 }
@@ -46,23 +46,31 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 15px;
 }
 
 .apresentacao-conteudo{
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
+
+}
+
+.apresentacao-imagem {
+    width: 50%;
+    border-radius: 20%;
 }
 
 .apresentacao-conteudo-titulo {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--fonte-secundaria);
 }
 
 .apresentacao-conteudo-paragrafo {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fonte-primaria);
+    text-align: justify;
 }
 
 .apresentacao-links {
@@ -76,14 +84,14 @@ body{
 .apresentacao-links-subtitulo{
     font-family: var(--fonte-secundaria);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .apresentacao-buttons {
     display: flex;
     justify-content: center;
     gap: 16px;
-    width: 378px;
+    width: 50%;
     text-align: center;
     text-decoration: none;
     color: var(--cor-secundaria);
@@ -92,7 +100,7 @@ body{
     padding: 21.5px 0;
     font-family: var(--fonte-primaria);
     font-weight: 600;
-    font-size: 24px;
+    font-size: 1.5rem;
     /*box-shadow: 10px 20px grey;*/
 }
 
@@ -115,13 +123,13 @@ body{
     padding: 23.64px;
     text-align: center;
     font-family: var(--fonte-primaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
 .apresentacao-conteudo-lista {
     font-family: var(--fonte-primaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
     color: var(--cor-secundaria);
 }
@@ -130,3 +138,25 @@ body{
     text-decoration: none;
     color: var(--cor-terciaria);
 }
+
+@media (max-width:1200px) {
+
+    .cabecalho {
+        padding: 12%;
+    }
+
+    .cabecalho-menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao-conteudo {
+        width: auto;
+    }
+}
+
+
